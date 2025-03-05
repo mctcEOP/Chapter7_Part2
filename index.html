@@ -12,11 +12,21 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #ff9ae6;">
         <div class="container">
             <a class="navbar-brand" href="#" style="color: white; font-weight: bold;">YeastPlus</a>
+            <!--Styling order button class navigation bar-->
+            <style>
+            .orderButton 
+            {
+                border: #f0beff;
+                color: #de69eb;
+            }
+            </style>
+            <!--inserting button into navigation bar-->
+            <button class="orderButton type="button"> Order Now </button>
         </div>
     </nav>
 
     <!-- Header/Hero Section -->
-    <header class="container-fluid py-5" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/DonutsBackground.jpg'); background-size: cover; background-position: center;">
+    <header class="container-fluid py-5" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Images/DonutsBackground.jpg'); background-size: cover; background-position: center;">
         <div class="container text-center text-white">
             <h1 class="display-4">YeastPlus</h1>
             <p class="lead">The softest bread in town</p>
@@ -26,12 +36,85 @@
     <!-- Main Content -->
     <main class="container my-5">
         <!-- Add your sections here -->
+        <span id="menu" class="anchor-spacer"></span>
+        <section class="row mb-5">
+            <div class="col-md-8">
+                <h2 class="text-brand border-bottom border-brand pb-2 mb-4">Donuts in Store</h2>
+                <div class="row">
+
+                    <!--adds strawberry donut to website and changes the card title color to pink-->
+                    <div class="col-md-3 mb-2">
+                        <div class="card border-brand h-100">
+                            <img border-radius="1px" src="Images/strawberry.jpg" class="card-img-top" alt="Strawberry donut">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #ff9ae6;">Strawberry Sprinkles</h5>
+                                <p class="card-text">a strawberry donut with multi-colored sprinkles</p>
+                                <p class="card-text fw-bold">$2.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--adds vanilla donut to website and changes the card title color to goldenrod-->
+                    <div class="col-md-3 mb-2">
+                        <div class="card border-brand h-100">
+                            <img src="Images/vanilla.jpg" class="card-img-top" alt="Vanilla Donut">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: goldenrod;">Vanilla Donut</h5>
+                                <p class="card-text">Vanilla Donut Drizled with caramel</p>
+                                <p class="card-text fw-bold">$3.99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--adds chocolate donut to website and changes the card title color to dark brown-->
+                    <div class="col-md-3 mb-2">
+                        <div class="card border-brand h-100">
+                            <img src="Images/chocolate.webp" class="card-img-top" alt="Chocolate Donut">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: rgba(56, 28, 0, 0.685);">Chocolate Donut</h5>
+                                <p class="card-text">A chocolate donut sprinkled with nuts</p>
+                                <p class="card-text fw-bold">$1.99</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+            <!--creates text divider and have 'open hours' appear above it-->
+            <span id="Hours" class="anchor-spacer"></span>
+            <section class="row mb-5">
+                <div class="col-md-8">
+                    <h2 class="text-brand border-bottom border-brand pb-2 mb-4">Open Hours</h2>
+                    <div class="row">
+                        <style>
+                        .text{
+                            font-size: 16px;
+                        }
+                        </style>
+                    <p class="text">Tuesday-Wenesday 5PM-12PM</p>
+                    <p class="text">Friday-Sunday 12AM-6PM</p>
+            </section>
+
+            <!--creates text divider and have 'Contact Us' appear above it-->
+            <span id="contact" class="anchor-spacer"></span>
+            <section class="row mb-5">
+                <div class="col-md-8">
+                    <h2 class="text-brand border-bottom border-brand pb-2 mb-4">Contact Us</h2>
+                    <div class="row">
+                        <style>
+                        .text{
+                            font-size: 16px;
+                        }
+                        </style>
+                    <p class="text">Donuts@gmail.com</p>
+                    <p class="text">123-456-7890</p>
+                    <p class="text">1501 Hennepin Ave, Minneapolis, MN 55403</p>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="py-4 text-center" style="background-color: #ffcad6;">
         <div class="container">
-            <p class="mb-0">© 2025 Your Restaurant Name. All rights reserved.</p>
+            <p class="mb-0">© 2025 YeastPlus. All rights reserved.</p>
         </div>
     </footer>
 
